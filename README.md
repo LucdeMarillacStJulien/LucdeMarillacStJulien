@@ -33,14 +33,3 @@ I'm a Computer Engineering student (The IIE) who prefers shipping working full-s
 | **BudgtAI** | Android budgeting app with AI receipt scanning (Gemini Vision), real-time Firestore sync, and a gamification engine (XP/levels/badges) | Kotlin, Jetpack Compose, Firebase, Gemini |
 | **Azure Functions Blob/Queue System** | Serverless functions for blob, queue, and table storage workflows, tested locally with Azurite | Azure Functions, .NET |
 | **Cybersecurity Awareness Chatbot** | WPF desktop assistant teaching cybersecurity best practices — keyword/pattern parsing, a task/reminder system, and a scored quiz | C#, WPF, .NET Framework |
-
----
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=LucdeMarillacStJulien&theme=tokyonight" alt="LucdeMarillacStJulien's GitHub profile summary: commits, stars, repositories and contributions" />
-</p>
-
-<p align="center">
-  <img height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=LucdeMarillacStJulien&theme=tokyonight" alt="Most used languages by repository count" />
-  <img height="200" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=LucdeMarillacStJulien&theme=tokyonight" alt="Most used languages by commit count" />
-</p>
