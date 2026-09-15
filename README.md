@@ -39,3 +39,12 @@ I'm a Computer Engineering student (The IIE) who prefers shipping working full-s
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=LucdeMarillacStJulien&theme=tokyonight&hide_border=true" alt="GitHub contribution streak: total contributions, current streak and longest streak" />
 </p>
+
+<p align="center">
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=LucdeMarillacStJulien&theme=tokyonight" alt="GitHub stats: total commits and repositories contributed to" />
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=LucdeMarillacStJulien&theme=tokyonight" alt="Top languages by commit: C# and Kotlin" />
+</p>
+
+<p align="center">
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=LucdeMarillacStJulien&theme=tokyonight&utcOffset=2" alt="Commits by hour of day (UTC+2)" />
+</p>
