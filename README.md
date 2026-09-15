@@ -28,8 +28,14 @@ I'm a Computer Engineering student (The IIE) who prefers shipping working full-s
 
 | Project | What it does | Stack |
 |---|---|---|
-| **GLMS — Logistics Management** | Decoupled ASP.NET Core Web API + Blazor Server logistics system — JWT auth, SignalR live updates, Factory/Observer patterns, Dockerized SQL Server, live currency conversion | ASP.NET Core, Blazor, EF Core, SignalR, Docker |
-| **Contract Monthly Claim System** | Role-based claim approval workflow (Lecturer → Coordinator → Manager → HR) with AES-encrypted document uploads and CSV invoice generation | ASP.NET Core MVC, EF Core, Identity |
-| **BudgtAI** | Android budgeting app with AI receipt scanning (Gemini Vision), real-time Firestore sync, and a gamification engine (XP/levels/badges) | Kotlin, Jetpack Compose, Firebase, Gemini |
-| **Azure Functions Blob/Queue System** | Serverless functions for blob, queue, and table storage workflows, tested locally with Azurite | Azure Functions, .NET |
+| [**GLMS — Logistics Management**](https://github.com/LucdeMarillacStJulien/logistics-management-system) | Decoupled ASP.NET Core Web API + Blazor Server logistics system — JWT auth, SignalR live updates, Factory/Observer patterns, Dockerized SQL Server, live currency conversion | ASP.NET Core, Blazor, EF Core, SignalR, Docker |
+| [**Contract Monthly Claim System**](https://github.com/LucdeMarillacStJulien/contract-claim-system) | Role-based claim approval workflow (Lecturer → Coordinator → Manager → HR) with AES-encrypted document uploads and CSV invoice generation | ASP.NET Core MVC, EF Core, Identity |
+| [**BudgtAI**](https://github.com/LucdeMarillacStJulien/budgtai) | Android budgeting app with AI receipt scanning (Gemini Vision), real-time Firestore sync, and a gamification engine (XP/levels/badges) | Kotlin, Jetpack Compose, Firebase, Gemini |
+| [**Azure E-Commerce Platform**](https://github.com/LucdeMarillacStJulien/azure-ecommerce-platform) | ASP.NET Core store (products, cart, orders, inventory) backed by Azure Functions writing to blob, queue, and table storage | ASP.NET Core MVC, Azure Functions, Azure Storage |
 | **Cybersecurity Awareness Chatbot** | WPF desktop assistant teaching cybersecurity best practices — keyword/pattern parsing, a task/reminder system, and a scored quiz | C#, WPF, .NET Framework |
+
+---
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=LucdeMarillacStJulien&theme=tokyonight&hide_border=true" alt="GitHub contribution streak: total contributions, current streak and longest streak" />
+</p>
