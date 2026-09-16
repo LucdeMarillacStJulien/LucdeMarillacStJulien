@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="212" viewBox="0 0 390 212" role="img" aria-labelledby="title">
+<title id="title">GitHub stats</title>
+<style>
+.t { font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #70a5fd; }
+.l { font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #a9b1d6; }
+.v { font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #38bdae; }
+.big { font: 700 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #38bdae; }
+.s { font: 400 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #a9b1d6; }
+.f { font: 400 10px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #a9b1d6; opacity: .55; }
+</style>
+<rect width="390" height="212" rx="6" fill="#1a1b27"/>
+<text x="25" y="38" class="t">GitHub Stats</text>
+<text x="25" y="72" class="l">Total contributions</text>
+<text x="365" y="72" class="v" text-anchor="end">616</text>
+<text x="25" y="98" class="l">Commits</text>
+<text x="365" y="98" class="v" text-anchor="end">249</text>
+<text x="25" y="124" class="l">Public repositories</text>
+<text x="365" y="124" class="v" text-anchor="end">6</text>
+<text x="25" y="150" class="l">Repositories contributed to</text>
+<text x="365" y="150" class="v" text-anchor="end">6</text>
+<text x="25" y="176" class="l">Stars earned</text>
+<text x="365" y="176" class="v" text-anchor="end">0</text>
+<text x="365" y="200" class="f" text-anchor="end">Updated 2026-09-16</text>
+</svg>

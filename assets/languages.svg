@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="212" viewBox="0 0 390 212" role="img" aria-labelledby="title">
+<title id="title">Top languages</title>
+<style>
+.t { font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #70a5fd; }
+.l { font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #a9b1d6; }
+.v { font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #38bdae; }
+.big { font: 700 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #38bdae; }
+.s { font: 400 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #a9b1d6; }
+.f { font: 400 10px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #a9b1d6; opacity: .55; }
+</style>
+<rect width="390" height="212" rx="6" fill="#1a1b27"/>
+<text x="25" y="38" class="t">Top Languages</text>
+<clipPath id="bar"><rect x="25" y="55" width="340" height="10" rx="5"/></clipPath>
+<g clip-path="url(#bar)">
+<rect x="25.00" y="55" width="147.39" height="10" fill="#7355dd"/>
+<rect x="171.89" y="55" width="87.60" height="10" fill="#A97BFF"/>
+<rect x="258.98" y="55" width="70.39" height="10" fill="#e34c26"/>
+<rect x="328.87" y="55" width="22.17" height="10" fill="#663399"/>
+<rect x="350.54" y="55" width="14.69" height="10" fill="#f1e05a"/>
+<rect x="364.73" y="55" width="0.77" height="10" fill="#384d54"/>
+</g>
+<circle cx="30" cy="93" r="5" fill="#7355dd"/>
+<text x="42" y="98" class="l">C# <tspan class="s">43.2%</tspan></text>
+<circle cx="205" cy="93" r="5" fill="#A97BFF"/>
+<text x="217" y="98" class="l">Kotlin <tspan class="s">25.6%</tspan></text>
+<circle cx="30" cy="123" r="5" fill="#e34c26"/>
+<text x="42" y="128" class="l">HTML <tspan class="s">20.6%</tspan></text>
+<circle cx="205" cy="123" r="5" fill="#663399"/>
+<text x="217" y="128" class="l">CSS <tspan class="s">6.4%</tspan></text>
+<circle cx="30" cy="153" r="5" fill="#f1e05a"/>
+<text x="42" y="158" class="l">JavaScript <tspan class="s">4.2%</tspan></text>
+<circle cx="205" cy="153" r="5" fill="#384d54"/>
+<text x="217" y="158" class="l">Dockerfile <tspan class="s">0.1%</tspan></text>
+<text x="365" y="200" class="f" text-anchor="end">By code size, public repos</text>
+</svg>
