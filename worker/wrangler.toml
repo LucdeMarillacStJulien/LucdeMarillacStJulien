@@ -2,12 +2,10 @@ name = "profile-cards"
 main = "index.js"
 compatibility_date = "2026-10-15"
 workers_dev = true
-
 # Optional: serve the cards from your own domain instead of *.workers.dev.
 # [[routes]]
 # pattern = "cards.example.com/*"
 # custom_domain = true
-
 # Backs the /views.svg counter.
 [[kv_namespaces]]
 binding = "VIEWS"

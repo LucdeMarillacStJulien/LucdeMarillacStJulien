@@ -8,7 +8,7 @@
   <img src="https://profile-cards.silentspectre.workers.dev/views.svg" alt="Profile view count" />
 </p>
 
-<img src="https://profile-cards.silentspectre.workers.dev/matrix.svg" alt="Matrix digital rain behind a terminal typing: Wake up, Luc... The Matrix has you... Follow the white rabbit. Knock, knock, Luc." width="900" />
+<img src="https://profile-cards.silentspectre.workers.dev/matrix.svg?v=2" alt="Matrix digital rain behind a terminal typing: Wake up, Luc... The Matrix has you... Follow the white rabbit. Knock, knock, Luc." width="900" />
 
 </div>
 
