@@ -3,6 +3,7 @@
 <img src="https://profile-cards.silentspectre.workers.dev/hero.svg" alt="Luc de Marillac St Julien, Computer Engineering student at The IIE working in .NET, Android and cloud. A terminal over Matrix rain types: Wake up, Luc... The Matrix has you... Follow the white rabbit. Knock, knock, Luc." width="900" />
 
 <p>
+  <a href="https://www.linkedin.com/in/luc-de-marillac"><img src="https://img.shields.io/badge/LinkedIn-1a1b27?style=for-the-badge&logo=linkedin&logoColor=70a5fd" alt="LinkedIn" /></a>
   <a href="mailto:lucdemarillac@gmail.com"><img src="https://img.shields.io/badge/Email-1a1b27?style=for-the-badge&logo=gmail&logoColor=DB0A40" alt="Email" /></a>
   <a href="https://github.com/LucdeMarillacStJulien?tab=repositories"><img src="https://img.shields.io/badge/Projects-1a1b27?style=for-the-badge&logo=github&logoColor=38bdae" alt="Projects" /></a>
   <img src="https://profile-cards.silentspectre.workers.dev/views.svg?v=2" alt="Profile view count" />
