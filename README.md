@@ -15,7 +15,7 @@
 
 ## 🧩 What I build
 
-I'm a Computer Engineering student at **The IIE** who'd rather ship a working full-stack system than another CRUD exercise — decoupled APIs with real auth, background services, encryption and CI.
+I'm a Computer Engineering student at **The IIE** who'd rather ship a working full-stack system than another CRUD exercise: decoupled APIs with real auth, background services, encryption and CI.
 
 ```yaml
 focus:      full-stack systems, end to end
@@ -40,7 +40,7 @@ currently:  wiring Gemini Vision into things that shouldn't have AI in them
 <tr>
 <td width="50%" valign="top">
 
-### 🚚 [GLMS — Logistics Management](https://github.com/LucdeMarillacStJulien/logistics-management-system)
+### 🚚 [GLMS: Logistics Management](https://github.com/LucdeMarillacStJulien/logistics-management-system)
 Decoupled **ASP.NET Core Web API + Blazor Server** logistics platform. JWT auth, SignalR live tracking, Factory/Observer patterns, Dockerised SQL Server, live currency conversion.
 
 `ASP.NET Core` `Blazor` `EF Core` `SignalR` `Docker`
@@ -49,7 +49,7 @@ Decoupled **ASP.NET Core Web API + Blazor Server** logistics platform. JWT auth,
 <td width="50%" valign="top">
 
 ### 📑 [Contract Monthly Claim System](https://github.com/LucdeMarillacStJulien/contract-claim-system)
-Four-stage approval workflow — Lecturer → Coordinator → Manager → HR — with **AES-encrypted** document uploads and CSV invoice generation.
+Four-stage approval workflow (Lecturer → Coordinator → Manager → HR) with **AES-encrypted** document uploads and CSV invoice generation.
 
 `ASP.NET Core MVC` `EF Core` `Identity`
 
@@ -75,7 +75,7 @@ Storefront with products, cart, orders and inventory, backed by **Azure Function
 </tr>
 </table>
 
-> 🛡️ **Cybersecurity Awareness Chatbot** — WPF desktop assistant that teaches security best practice through keyword/pattern parsing, a task & reminder system and a scored quiz. `C#` `WPF` `.NET Framework`
+> 🛡️ **Cybersecurity Awareness Chatbot**: a WPF desktop assistant that teaches security best practice through keyword/pattern parsing, a task & reminder system and a scored quiz. `C#` `WPF` `.NET Framework`
 
 ---
 
@@ -95,7 +95,7 @@ Storefront with products, cart, orders and inventory, backed by **Azure Function
   <img src="https://profile-cards.silentspectre.workers.dev/snake.svg" alt="A snake eating this year's contribution squares" />
 </picture>
 
-<sub>Stat cards are generated from the GitHub GraphQL API by <a href="./scripts/generate_stats.py">a script in this repo</a>, committed hourly, and served through <a href="./worker">my own Cloudflare Worker</a> — nothing third-party left to go down.</sub>
+<sub>Stat cards are generated from the GitHub GraphQL API by <a href="./scripts/generate_stats.py">a script in this repo</a>, committed hourly, and served through <a href="./worker">my own Cloudflare Worker</a>, so there's nothing third-party left to go down.</sub>
 
 </div>
 
