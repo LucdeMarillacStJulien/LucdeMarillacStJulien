@@ -20,16 +20,13 @@ unreachable the last cached copy is served instead (`x-card-age: stale`).
 cd worker && npx wrangler deploy
 ```
 
-First run opens a browser to log in to Cloudflare. It prints the deployed URL,
-e.g. `https://profile-cards.<your-subdomain>.workers.dev`.
+First run opens a browser to log in to Cloudflare.
 
-## Point the README at it
+The KV namespace backing `/views.svg` is already created and bound in
+`wrangler.toml`. To recreate it from scratch, run
+`npx wrangler kv namespace create VIEWS` and paste the printed id in.
 
-Replace the relative card paths with the worker URL:
-
-```bash
-sed -i 's#\./assets/\(stats\|languages\|streak\)\.svg#https://profile-cards.<your-subdomain>.workers.dev/\1.svg#g' ../README.md
-```
+The README already points at the deployed URL above.
 
 ## Test the route table
 
