@@ -3,7 +3,7 @@
 <img src="https://profile-cards.silentspectre.workers.dev/hero.svg" alt="Luc de Marillac St Julien, Computer Engineering student at The IIE working in .NET, Android and cloud. A terminal over Matrix rain types: Wake up, Luc... The Matrix has you... Follow the white rabbit. Knock, knock, Luc." width="900" />
 
 <p>
-  <a href="https://www.linkedin.com/in/luc-de-marillac"><img src="https://img.shields.io/badge/LinkedIn-1a1b27?style=for-the-badge&logo=linkedin&logoColor=70a5fd" alt="LinkedIn" /></a>
+  <a href="https://www.linkedin.com/in/luc-de-marillac"><img src="https://img.shields.io/badge/LinkedIn-1a1b27?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iNCIgZmlsbD0iIzcwYTVmZCIvPjxyZWN0IHg9IjUiIHk9IjkuNSIgd2lkdGg9IjMiIGhlaWdodD0iOSIgZmlsbD0iIzFhMWIyNyIvPjxjaXJjbGUgY3g9IjYuNSIgY3k9IjYuMiIgcj0iMS44IiBmaWxsPSIjMWExYjI3Ii8%2BPHBhdGggZD0iTTEwLjUgOS41aDIuOXYxLjNjLjUtLjkgMS42LTEuNSAyLjktMS41IDIuMyAwIDMuMiAxLjQgMy4yIDMuOXY1LjNoLTN2LTQuN2MwLTEuMi0uMy0yLTEuNC0ycy0xLjYuOC0xLjYgMnY0LjdoLTN6IiBmaWxsPSIjMWExYjI3Ii8%2BPC9zdmc%2B" alt="LinkedIn" /></a>
   <a href="mailto:lucdemarillac@gmail.com"><img src="https://img.shields.io/badge/Email-1a1b27?style=for-the-badge&logo=gmail&logoColor=DB0A40" alt="Email" /></a>
   <a href="https://github.com/LucdeMarillacStJulien?tab=repositories"><img src="https://img.shields.io/badge/Projects-1a1b27?style=for-the-badge&logo=github&logoColor=38bdae" alt="Projects" /></a>
   <img src="https://profile-cards.silentspectre.workers.dev/views.svg?v=2" alt="Profile view count" />
