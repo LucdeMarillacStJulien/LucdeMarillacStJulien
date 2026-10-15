@@ -1,14 +1,12 @@
 <div align="center">
 
-<img src="https://profile-cards.silentspectre.workers.dev/banner.svg" alt="Luc de Marillac St Julien, Computer Engineering student working in .NET, Android and cloud" width="900" />
+<img src="https://profile-cards.silentspectre.workers.dev/hero.svg" alt="Luc de Marillac St Julien, Computer Engineering student at The IIE working in .NET, Android and cloud. A terminal over Matrix rain types: Wake up, Luc... The Matrix has you... Follow the white rabbit. Knock, knock, Luc." width="900" />
 
 <p>
-  <a href="mailto:lucdemarillac@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://github.com/LucdeMarillacStJulien?tab=repositories"><img src="https://img.shields.io/badge/Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Projects" /></a>
-  <img src="https://profile-cards.silentspectre.workers.dev/views.svg" alt="Profile view count" />
+  <a href="mailto:lucdemarillac@gmail.com"><img src="https://img.shields.io/badge/Email-1a1b27?style=for-the-badge&logo=gmail&logoColor=DB0A40" alt="Email" /></a>
+  <a href="https://github.com/LucdeMarillacStJulien?tab=repositories"><img src="https://img.shields.io/badge/Projects-1a1b27?style=for-the-badge&logo=github&logoColor=38bdae" alt="Projects" /></a>
+  <img src="https://profile-cards.silentspectre.workers.dev/views.svg?v=2" alt="Profile view count" />
 </p>
-
-<img src="https://profile-cards.silentspectre.workers.dev/matrix.svg?v=2" alt="Matrix digital rain behind a terminal typing: Wake up, Luc... The Matrix has you... Follow the white rabbit. Knock, knock, Luc." width="900" />
 
 </div>
 
@@ -20,15 +18,17 @@ I'm a Computer Engineering student at **The IIE** who'd rather ship a working fu
 
 ```yaml
 focus:      full-stack systems, end to end
+languages:  C# · Java · Kotlin · Python
 backend:    ASP.NET Core Web API · EF Core · SignalR · ASP.NET Identity
 frontend:   Blazor Server · Jetpack Compose · MVC · WPF
 cloud:      Azure Functions · Azure Storage · Firebase · Docker Compose
+tooling:    Linux · Git · GitHub Actions · VS Code
 patterns:   Factory · Observer · role-based workflows · JWT · AES at rest
 currently:  wiring Gemini Vision into things that shouldn't have AI in them
 ```
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,azure,docker,kotlin,androidstudio,firebase,postgres,git,github,vscode,python&theme=dark" alt="Tech stack: C#, .NET, Azure, Docker, Kotlin, Android Studio, Firebase, PostgreSQL, Git, GitHub, VS Code, Python" />
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,java,kotlin,python,azure,docker,linux,androidstudio,firebase,postgres,git,github,vscode&theme=dark" alt="Tech stack: C#, .NET, Java, Kotlin, Python, Azure, Docker, Linux, Android Studio, Firebase, PostgreSQL, Git, GitHub, VS Code" />
 </div>
 
 ---

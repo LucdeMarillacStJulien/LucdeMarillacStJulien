@@ -17,8 +17,7 @@ const CARDS = {
   "languages.svg": ["main", "assets/languages.svg"],
   "streak.svg": ["main", "assets/streak.svg"],
   "activity.svg": ["main", "assets/activity.svg"],
-  "banner.svg": ["main", "assets/banner.svg"],
-  "matrix.svg": ["main", "assets/matrix.svg"],
+  "hero.svg": ["main", "assets/hero.svg"],
   "snake.svg": ["output", "snake.svg"],
   "snake-dark.svg": ["output", "snake-dark.svg"],
 };
@@ -32,17 +31,17 @@ export function upstreamFor(pathname) {
 
 // Profile view counter. Lives here rather than on a third-party badge service
 // so it renders at the same speed as the cards and can't vanish.
-const BADGE_W = 184;
-
+// Styled to sit next to shields.io "for-the-badge" badges in the README header.
 function badge(count) {
   const n = String(count);
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${BADGE_W}" height="28" role="img" aria-label="Profile views: ${n}">
+  const labelW = 118;
+  const w = labelW + 20 + n.length * 9;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="28" role="img" aria-label="Profile views: ${n}">
 <title>Profile views: ${n}</title>
-<rect width="${BADGE_W}" height="28" rx="4" fill="#1a1b27"/>
-<rect width="118" height="28" rx="4" fill="#121F45"/>
-<g font-family="'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600">
-<text x="16" y="18" fill="#a9b1d6">PROFILE VIEWS</text>
-<text x="${BADGE_W - 16}" y="18" fill="#FFC906" text-anchor="end">${n}</text>
+<rect width="${w}" height="28" fill="#1a1b27"/>
+<g font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="10" font-weight="700" letter-spacing="1.2">
+<text x="12" y="18" fill="#ffffff">PROFILE VIEWS</text>
+<text x="${labelW + 6}" y="18" fill="#70a5fd">${n}</text>
 </g>
 </svg>`;
 }

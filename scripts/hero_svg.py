@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
-"""Render assets/matrix.svg: Matrix digital rain behind a terminal that types
-lines from the film. Pure SVG + CSS animation, so it plays inside a README
+"""Render assets/hero.svg, the profile header: name and tagline over Matrix
+digital rain, above a terminal that types lines from the film. Pure SVG + CSS animation, so it plays inside a README
 <img> with no JavaScript and no third-party host.
 
-Static asset: rerun by hand after editing LINES. Seeded, so output is stable.
+Static asset: rerun by hand after editing NAME, TAGLINE or LINES. Seeded, so output is stable.
 """
 import random
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-W, H = 900, 200
+W, H = 900, 250
 # Same Tokyo Night palette as the stat cards and banner, Red Bull red cursor.
 BG, PANEL = "#1a1b27", "#16161e"
 RAIN_DIM, RAIN, RAIN_TIP = "#4d6bc4", "#70a5fd", "#c0caf5"
 PROMPT_C, TYPED, CURSOR = "#a9b1d6", "#38bdae", "#DB0A40"
 MONO = "Consolas, 'Courier New', monospace"
+SANS = "'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif"
+
+NAME = "Luc de Marillac St Julien"
+TAGLINE = "Computer Engineering student at The IIE  ·  .NET  ·  Android  ·  Cloud"
 
 LINES = ["Wake up, Luc...", "The Matrix has you...", "Follow the white rabbit.", "Knock, knock, Luc."]
 PROMPT = "luc@zion:~$ "
@@ -51,10 +55,10 @@ def pct(v):
 
 def typing():
     slot = 100 / len(LINES)
-    px, py, pw, ph = 60, 62, 780, 76
+    px, py, pw, ph = 48, 154, 804, 70
     tx = px + 22
     x0 = tx + len(PROMPT) * CW
-    base = py + 48
+    base = py + 44
     css, body = [], []
 
     for i, line in enumerate(LINES):
@@ -100,7 +104,7 @@ def typing():
 def main():
     css, panel = typing()
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="mt">
-<title id="mt">Matrix digital rain behind a terminal typing: {escape(' / '.join(LINES))}</title>
+<title id="mt">{escape(NAME)}: {escape(TAGLINE.replace(chr(183), "-"))}. A terminal over Matrix rain types: {escape(' / '.join(LINES))}</title>
 <defs>
   <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0%" stop-color="{RAIN_DIM}" stop-opacity="0"/>
@@ -112,11 +116,18 @@ def main():
     <feGaussianBlur stdDeviation="2.2" result="b"/>
     <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
+  <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="{BG}" stop-opacity=".9"/>
+    <stop offset="45%" stop-color="{BG}" stop-opacity=".55"/>
+    <stop offset="100%" stop-color="{BG}" stop-opacity="0"/>
+  </linearGradient>
   <clipPath id="frame"><rect width="{W}" height="{H}" rx="10"/></clipPath>
 </defs>
 <style>
 .col {{ font: 14px {MONO}; animation: fall linear infinite; }}
 @keyframes fall {{ from {{ transform: translateY(-300px); }} to {{ transform: translateY({H + 20}px); }} }}
+.name {{ font: 700 42px {SANS}; fill: #ffffff; }}
+.tag {{ font: 400 17px {SANS}; fill: {PROMPT_C}; }}
 .prompt {{ font: 22px {MONO}; fill: {PROMPT_C}; }}
 .typed {{ font: 700 22px {MONO}; fill: {TYPED}; }}
 .cursor {{ animation: blink 1s steps(1) infinite; }}
@@ -127,11 +138,15 @@ def main():
 <g clip-path="url(#frame)">
 <rect width="{W}" height="{H}" fill="{BG}"/>
 {rain()}
+<rect width="{W}" height="{H}" fill="url(#shade)"/>
+<rect width="5" height="{H}" fill="{CURSOR}"/>
+<text x="48" y="76" class="name">{escape(NAME)}</text>
+<text x="50" y="112" class="tag">{escape(TAGLINE)}</text>
 {panel}
 </g>
 </svg>
 """
-    out = Path(__file__).resolve().parent.parent / "assets" / "matrix.svg"
+    out = Path(__file__).resolve().parent.parent / "assets" / "hero.svg"
     out.write_text(svg, encoding="utf-8")
     print(f"wrote {out} ({len(svg):,} bytes)")
 
