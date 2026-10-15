@@ -1,0 +1,8 @@
+name = "profile-cards"
+main = "index.js"
+compatibility_date = "2026-10-15"
+
+# Optional: serve the cards from your own domain instead of *.workers.dev.
+# [[routes]]
+# pattern = "cards.example.com/*"
+# custom_domain = true
