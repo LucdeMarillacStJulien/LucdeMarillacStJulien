@@ -31,6 +31,7 @@ const CARDS = {
   "activity.svg": ["main", "assets/activity.svg"],
 
   "banner.svg": ["main", "assets/banner.svg"],
+  "matrix.svg": ["main", "assets/matrix.svg"],
 
   "snake.svg": ["output", "snake.svg"],
 

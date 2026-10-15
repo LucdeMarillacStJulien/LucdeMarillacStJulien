@@ -8,6 +8,8 @@
   <img src="https://profile-cards.silentspectre.workers.dev/views.svg" alt="Profile view count" />
 </p>
 
+<img src="https://profile-cards.silentspectre.workers.dev/matrix.svg" alt="Matrix digital rain behind a terminal typing: Wake up, Luc... The Matrix has you... Follow the white rabbit. Knock, knock, Luc." width="900" />
+
 </div>
 
 ---
@@ -92,9 +94,17 @@ Storefront with products, cart, orders and inventory, backed by **Azure Function
   <img src="https://profile-cards.silentspectre.workers.dev/snake.svg" alt="A snake eating this year's contribution squares" />
 </picture>
 
-<sub>Stat cards are generated from the GitHub GraphQL API by <a href="./scripts/generate_stats.py">a script in this repo</a> committed hourly, and served through <a href="./worker">my own Cloudflare Worker</a> — nothing third-party left to go down.</sub>
+<sub>Stat cards are generated from the GitHub GraphQL API by <a href="./scripts/generate_stats.py">a script in this repo</a>, committed hourly, and served through <a href="./worker">my own Cloudflare Worker</a> — nothing third-party left to go down.</sub>
 
 </div>
 
 ---
 
+<div align="center">
+
+<sub><i>"This is your last chance. After this, there is no turning back."</i></sub>
+
+<a href="https://github.com/LucdeMarillacStJulien?tab=repositories"><img src="https://img.shields.io/badge/%F0%9F%94%B4_RED_PILL-see_how_deep_the_repos_go-DB0A40?style=for-the-badge&labelColor=0d0208" alt="Red pill: see how deep the repos go" /></a>
+<a href="https://github.com"><img src="https://img.shields.io/badge/%F0%9F%94%B5_BLUE_PILL-wake_up_in_your_feed-1f6feb?style=for-the-badge&labelColor=0d0208" alt="Blue pill: wake up in your feed" /></a>
+
+</div>
