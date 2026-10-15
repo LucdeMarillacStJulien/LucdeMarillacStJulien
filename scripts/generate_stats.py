@@ -132,6 +132,7 @@ def fetch():
         "languages": languages,
         "current": current,
         "longest": longest,
+        "days": days,
         "first_day": min((d for d, c in days.items() if c > 0), default=today),
         "today": today,
     }
@@ -229,12 +230,83 @@ def render_streak(d):
     return card(780, 195, "GitHub contribution streak", "\n".join(body))
 
 
+def render_activity(d):
+    """Area chart of the last 52 weeks of contributions.
+
+    Replaces github-readme-activity-graph, which started returning HTTP 402.
+    """
+    today, days = d["today"], d["days"]
+    start = today - timedelta(days=today.weekday() % 7 + 51 * 7)
+    weeks = []
+    for i in range(52):
+        w0 = start + timedelta(days=i * 7)
+        total = sum(days.get(w0 + timedelta(days=k), 0) for k in range(7))
+        weeks.append((w0, total))
+
+    W, H = 780, 240
+    left, right, top, bottom = 45, 20, 55, 42
+    pw, ph = W - left - right, H - top - bottom
+    peak = max((t for _, t in weeks), default=0)
+    scale = peak or 1
+
+    def xy(i, total):
+        x = left + (pw * i / (len(weeks) - 1))
+        y = top + ph - (ph * total / scale)
+        return x, y
+
+    pts = [xy(i, t) for i, (_, t) in enumerate(weeks)]
+    line = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+    area = f"{left},{top + ph} {line} {left + pw},{top + ph}"
+
+    body = [
+        '<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">'
+        f'<stop offset="0%" stop-color="{TITLE}" stop-opacity=".55"/>'
+        f'<stop offset="100%" stop-color="{TITLE}" stop-opacity="0"/>'
+        "</linearGradient></defs>",
+        '<text x="25" y="34" class="t">Contribution activity</text>',
+        f'<text x="{W - 20}" y="34" class="s" text-anchor="end">'
+        f'{sum(t for _, t in weeks):,} in the last year</text>',
+    ]
+
+    for k in range(3):
+        gy = top + ph - ph * k / 2
+        body.append(
+            f'<line x1="{left}" y1="{gy:.1f}" x2="{left + pw}" y2="{gy:.1f}" '
+            f'stroke="{LABEL}" stroke-opacity=".15"/>'
+        )
+        body.append(
+            f'<text x="{left - 10}" y="{gy + 4:.1f}" class="s" text-anchor="end">'
+            f'{round(scale * k / 2)}</text>'
+        )
+
+    body.append(f'<polygon points="{area}" fill="url(#g)"/>')
+    body.append(
+        f'<polyline points="{line}" fill="none" stroke="{TITLE}" '
+        'stroke-width="2" stroke-linejoin="round"/>'
+    )
+
+    seen = set()
+    for i, (w0, _) in enumerate(weeks):
+        if w0.month not in seen and i < len(weeks) - 1:
+            seen.add(w0.month)
+            x, _y = xy(i, 0)
+            body.append(
+                f'<text x="{x:.1f}" y="{H - 18}" class="s" text-anchor="middle">'
+                f'{w0:%b}</text>'
+            )
+
+    px, py = pts[max(range(len(weeks)), key=lambda i: weeks[i][1])]
+    body.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="4" fill="{ACCENT}"/>')
+    return card(W, H, "Contribution activity over the last year", "\n".join(body))
+
+
 def main():
     data = fetch()
     cards = {
         "stats.svg": render_stats(data),
         "languages.svg": render_languages(data),
         "streak.svg": render_streak(data),
+        "activity.svg": render_activity(data),
     }
     OUT.mkdir(parents=True, exist_ok=True)
     for name, svg in cards.items():

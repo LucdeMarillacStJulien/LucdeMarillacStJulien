@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200" role="img" aria-labelledby="bt">
+<title id="bt">Luc de Marillac St Julien — Computer Engineering student working in .NET, Android and cloud</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#121F45"/>
+    <stop offset="55%" stop-color="#1a1b27"/>
+    <stop offset="100%" stop-color="#2b3f7d"/>
+  </linearGradient>
+  <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#70a5fd" stop-opacity=".30"/>
+    <stop offset="60%" stop-color="#DB0A40" stop-opacity=".22"/>
+    <stop offset="100%" stop-color="#FFC906" stop-opacity=".18"/>
+  </linearGradient>
+  <clipPath id="r"><rect width="900" height="200" rx="10"/></clipPath>
+</defs>
+<g clip-path="url(#r)">
+  <rect width="900" height="200" fill="url(#bg)"/>
+  <path d="M0 132 C 150 96, 300 170, 450 134 S 750 92, 900 128 L900 200 L0 200 Z" fill="url(#wave)"/>
+  <path d="M0 152 C 170 120, 320 188, 470 154 S 760 116, 900 150 L900 200 L0 200 Z" fill="#70a5fd" fill-opacity=".10"/>
+  <rect x="0" y="0" width="5" height="200" fill="#DB0A40"/>
+  <text x="46" y="88" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="700" fill="#ffffff">Luc de Marillac St Julien</text>
+  <text x="48" y="122" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#a9b1d6">Computer Engineering student &#183; .NET &#183; Android &#183; Cloud</text>
+  <g font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#70a5fd">
+    <text x="48" y="156">The IIE</text>
+    <text x="120" y="156" fill="#4a5da8">&#183;</text>
+    <text x="136" y="156" fill="#38bdae">building systems end to end</text>
+  </g>
+</g>
+</svg>

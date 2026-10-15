@@ -13,6 +13,8 @@ const CARDS = {
   "stats.svg": ["main", "assets/stats.svg"],
   "languages.svg": ["main", "assets/languages.svg"],
   "streak.svg": ["main", "assets/streak.svg"],
+  "activity.svg": ["main", "assets/activity.svg"],
+  "banner.svg": ["main", "assets/banner.svg"],
   "snake.svg": ["output", "snake.svg"],
   "snake-dark.svg": ["output", "snake-dark.svg"],
 };
@@ -22,6 +24,30 @@ export function upstreamFor(pathname) {
   if (!card) return null;
   const [branch, path] = card;
   return `https://raw.githubusercontent.com/${REPO}/${branch}/${path}`;
+}
+
+// Profile view counter. Lives here rather than on a third-party badge service
+// so it renders at the same speed as the cards and can't vanish.
+const BADGE_W = 184;
+
+function badge(count) {
+  const n = String(count);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${BADGE_W}" height="28" role="img" aria-label="Profile views: ${n}">
+<title>Profile views: ${n}</title>
+<rect width="${BADGE_W}" height="28" rx="4" fill="#1a1b27"/>
+<rect width="118" height="28" rx="4" fill="#121F45"/>
+<g font-family="'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600">
+<text x="16" y="18" fill="#a9b1d6">PROFILE VIEWS</text>
+<text x="${BADGE_W - 16}" y="18" fill="#FFC906" text-anchor="end">${n}</text>
+</g>
+</svg>`;
+}
+
+async function views(env) {
+  if (!env.VIEWS) return badge("—");
+  const n = Number((await env.VIEWS.get("count")) || 0) + 1;
+  await env.VIEWS.put("count", String(n));
+  return badge(n);
 }
 
 const svg = (body, age) =>
@@ -34,8 +60,19 @@ const svg = (body, age) =>
   });
 
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
     const url = new URL(request.url);
+
+    if (url.pathname === "/views.svg") {
+      return new Response(await views(env), {
+        headers: {
+          "content-type": "image/svg+xml; charset=utf-8",
+          // A counter must not be cached, or it shows a stale number.
+          "cache-control": "no-cache, no-store, must-revalidate",
+        },
+      });
+    }
+
     const upstream = upstreamFor(url.pathname);
     if (!upstream) return new Response("Not found", { status: 404 });
 

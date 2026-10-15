@@ -1,11 +1,11 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:70a5fd,100:fe428e&height=180&section=header&text=Luc%20de%20Marillac%20St%20Julien&fontColor=ffffff&fontSize=42&fontAlignY=35&desc=Computer%20Engineering%20student%20%E2%80%A2%20.NET%20%E2%80%A2%20Android%20%E2%80%A2%20Cloud&descAlignY=58&descSize=16" alt="Luc de Marillac St Julien — Computer Engineering student working in .NET, Android and cloud" />
+<img src="https://profile-cards.silentspectre.workers.dev/banner.svg" alt="Luc de Marillac St Julien, Computer Engineering student working in .NET, Android and cloud" width="900" />
 
 <p>
   <a href="mailto:lucdemarillac@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/LucdeMarillacStJulien?tab=repositories"><img src="https://img.shields.io/badge/Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Projects" /></a>
-  <img src="https://komarev.com/ghpvc/?username=LucdeMarillacStJulien&style=for-the-badge&color=70a5fd&label=PROFILE+VIEWS" alt="Profile view count" />
+  <img src="https://profile-cards.silentspectre.workers.dev/views.svg" alt="Profile view count" />
 </p>
 
 </div>
@@ -80,24 +80,21 @@ Storefront with products, cart, orders and inventory, backed by **Azure Function
 
 <div align="center">
 
-<img src="./assets/streak.svg" alt="GitHub contribution streak: total contributions, current streak and longest streak" />
+<img src="https://profile-cards.silentspectre.workers.dev/streak.svg" alt="GitHub contribution streak: total contributions, current streak and longest streak" />
 
-<img height="212" src="./assets/stats.svg" alt="GitHub stats: total contributions, commits, repositories and stars" />
-<img height="212" src="./assets/languages.svg" alt="Top languages by code size across public repositories" />
+<img height="212" src="https://profile-cards.silentspectre.workers.dev/stats.svg" alt="GitHub stats: total contributions, commits, repositories and stars" />
+<img height="212" src="https://profile-cards.silentspectre.workers.dev/languages.svg" alt="Top languages by code size across public repositories" />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=LucdeMarillacStJulien&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20activity" alt="Contribution activity graph for the past year" />
+<img src="https://profile-cards.silentspectre.workers.dev/activity.svg" alt="Contribution activity over the last year" width="780" />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LucdeMarillacStJulien/LucdeMarillacStJulien/output/snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/LucdeMarillacStJulien/LucdeMarillacStJulien/output/snake.svg" alt="A snake eating this year's contribution squares" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://profile-cards.silentspectre.workers.dev/snake-dark.svg" />
+  <img src="https://profile-cards.silentspectre.workers.dev/snake.svg" alt="A snake eating this year's contribution squares" />
 </picture>
 
-<sub>Stat cards are generated from the GitHub GraphQL API by <a href="./scripts/generate_stats.py">a script in this repo</a> and committed daily — no third-party service rendering them.</sub>
+<sub>Stat cards are generated from the GitHub GraphQL API by <a href="./scripts/generate_stats.py">a script in this repo</a> committed hourly, and served through <a href="./worker">my own Cloudflare Worker</a> — nothing third-party left to go down.</sub>
 
 </div>
 
 ---
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:fe428e,50:70a5fd,100:1a1b27&height=120&section=footer" alt="" />
-</div>
