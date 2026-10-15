@@ -104,7 +104,7 @@ Storefront with products, cart, orders and inventory, backed by **Azure Function
 
 <sub><i>"This is your last chance. After this, there is no turning back."</i></sub>
 
-<a href="https://github.com/LucdeMarillacStJulien?tab=repositories"><img src="https://img.shields.io/badge/%F0%9F%94%B4_RED_PILL-see_how_deep_the_repos_go-DB0A40?style=for-the-badge&labelColor=0d0208" alt="Red pill: see how deep the repos go" /></a>
-<a href="https://github.com"><img src="https://img.shields.io/badge/%F0%9F%94%B5_BLUE_PILL-wake_up_in_your_feed-1f6feb?style=for-the-badge&labelColor=0d0208" alt="Blue pill: wake up in your feed" /></a>
+<a href="https://github.com/LucdeMarillacStJulien?tab=repositories"><img src="https://img.shields.io/badge/%F0%9F%94%B4_RED_PILL-see_how_deep_the_repos_go-DB0A40?style=for-the-badge&labelColor=1a1b27" alt="Red pill: see how deep the repos go" /></a>
+<a href="https://github.com"><img src="https://img.shields.io/badge/%F0%9F%94%B5_BLUE_PILL-wake_up_in_your_feed-70a5fd?style=for-the-badge&labelColor=1a1b27" alt="Blue pill: wake up in your feed" /></a>
 
 </div>

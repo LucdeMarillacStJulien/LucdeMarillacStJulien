@@ -10,7 +10,10 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 W, H = 900, 200
-GREEN, DIM, BG = "#00ff41", "#008f11", "#0d0208"
+# Same Tokyo Night palette as the stat cards and banner, Red Bull red cursor.
+BG, PANEL = "#1a1b27", "#16161e"
+RAIN_DIM, RAIN, RAIN_TIP = "#4d6bc4", "#70a5fd", "#c0caf5"
+PROMPT_C, TYPED, CURSOR = "#a9b1d6", "#38bdae", "#DB0A40"
 MONO = "Consolas, 'Courier New', monospace"
 
 LINES = ["Wake up, Luc...", "The Matrix has you...", "Follow the white rabbit.", "Knock, knock, Luc."]
@@ -78,15 +81,15 @@ def typing():
             f'<text x="{x0}" y="{base}" class="typed" textLength="{width}" '
             f'lengthAdjust="spacingAndGlyphs">{escape(line)}</text>'
             f'<g style="animation:type{i} {CYCLE}s linear infinite">'
-            f'<rect x="{x0}" y="{py + 2}" width="{pw}" height="{ph - 4}" fill="{BG}"/>'
-            f'<rect class="cursor" x="{x0 + 1}" y="{base - 19}" width="{CW - 2}" height="24" fill="{GREEN}"/>'
+            f'<rect x="{x0}" y="{py + 2}" width="{pw}" height="{ph - 4}" fill="{PANEL}"/>'
+            f'<rect class="cursor" x="{x0 + 1}" y="{base - 19}" width="{CW - 2}" height="24" fill="{CURSOR}"/>'
             f"</g></g>"
         )
 
     panel = (
         f'<clipPath id="panel"><rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="6"/></clipPath>'
-        f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="6" fill="{BG}" '
-        f'stroke="{GREEN}" stroke-opacity=".55"/>'
+        f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="6" fill="{PANEL}" '
+        f'stroke="{RAIN}" stroke-opacity=".45"/>'
         f'<text x="{tx}" y="{base}" class="prompt" textLength="{len(PROMPT) * CW - CW}" '
         f'lengthAdjust="spacingAndGlyphs">{escape(PROMPT.strip())}</text>'
         f'<g clip-path="url(#panel)" filter="url(#glow)">{"".join(body)}</g>'
@@ -100,12 +103,12 @@ def main():
 <title id="mt">Matrix digital rain behind a terminal typing: {escape(' / '.join(LINES))}</title>
 <defs>
   <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="{DIM}" stop-opacity="0"/>
-    <stop offset="70%" stop-color="{DIM}" stop-opacity=".8"/>
-    <stop offset="94%" stop-color="{GREEN}"/>
-    <stop offset="100%" stop-color="#d7ffd9"/>
+    <stop offset="0%" stop-color="{RAIN_DIM}" stop-opacity="0"/>
+    <stop offset="60%" stop-color="{RAIN_DIM}"/>
+    <stop offset="92%" stop-color="{RAIN}"/>
+    <stop offset="100%" stop-color="{RAIN_TIP}"/>
   </linearGradient>
-  <filter id="glow" x="-10%" y="-50%" width="120%" height="200%">
+  <filter id="glow" x="-10%" y="-50%" width="120%" height="200%" color-interpolation-filters="sRGB">
     <feGaussianBlur stdDeviation="2.2" result="b"/>
     <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
@@ -114,8 +117,8 @@ def main():
 <style>
 .col {{ font: 14px {MONO}; animation: fall linear infinite; }}
 @keyframes fall {{ from {{ transform: translateY(-300px); }} to {{ transform: translateY({H + 20}px); }} }}
-.prompt {{ font: 22px {MONO}; fill: {DIM}; }}
-.typed {{ font: 700 22px {MONO}; fill: {GREEN}; }}
+.prompt {{ font: 22px {MONO}; fill: {PROMPT_C}; }}
+.typed {{ font: 700 22px {MONO}; fill: {TYPED}; }}
 .cursor {{ animation: blink 1s steps(1) infinite; }}
 @keyframes blink {{ 50% {{ opacity: 0; }} }}
 {css}
